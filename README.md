@@ -1,93 +1,93 @@
-# Playwright Automation – Professional Practice Repository
+# 🎭 Playwright Automation – Professional Practice
 
-This repository is a professional Playwright practice project designed as a portfolio and reference for end-to-end (E2E) test automation best practices.
+> A modern, production-ready **E2E test automation** repository built with **Playwright** & **TypeScript**. Portfolio-grade with zero friction.
 
-**Goal:** Clone, install, run tests, and generate detailed HTML reports—locally and in CI—with zero additional setup.
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green)](https://nodejs.org/)
+[![Playwright](https://img.shields.io/badge/Playwright-Latest-blue)](https://playwright.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5+-blue)](https://www.typescriptlang.org/)
+[![GitHub Actions](https://img.shields.io/badge/CI/CD-GitHub%20Actions-orange)](https://github.com/features/actions)
 
-## Tech Stack
+---
 
-- **Playwright** – Modern E2E testing framework
-- **TypeScript** – Type-safe test code
-- **Node.js** – Runtime environment
-- **GitHub Actions** – CI/CD automation
+## 🚀 Tech Stack
 
-## Project Structure
+| Tool | Purpose |
+|------|---------|
+| **Playwright** | Modern E2E testing framework |
+| **TypeScript** | Type-safe test automation |
+| **Node.js** | Runtime environment |
+| **GitHub Actions** | Automated CI/CD |
+| **GitHub Pages** | Public report hosting |
+
+---
+
+## 📁 Project Structure
 
 ```
 .
-├── tests/                    # Test specifications
-├── playwright.config.ts      # Playwright configuration
+├── tests/                    # Test specifications, specs, pages, fixtures, helpers, types
+├── playwright.config.ts      # Configuration
 ├── package.json
 ├── .gitignore
-└── .github/
-    └── workflows/
-        └── ci.yml            # GitHub Actions workflow
+└── .github/workflows/
+    └── playwright.yml               # GitHub Actions pipeline
 ```
 
-## Quick Start
+---
 
-### 1. Clone the repository
+## ⚡ Quick Start
 
+### 1️⃣ Clone & Install
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
+git clone https://github.com/lucasvacis87/playwright-repo.git
 cd <repo-name>
-```
-
-### 2. Install dependencies
-
-```bash
 npm install
 npx playwright install --with-deps
 ```
 
-### 3. Run tests
-
+### 2️⃣ Run Tests
 ```bash
-npm test                    # Run all tests
-npm run test:ui            # UI mode
-npm run test:debug         # Debug mode
-npm run report             # View HTML report
+npm test              # All tests
+npm run test:ui       # Interactive mode
+npm run test:debug    # Debug mode
+npm run report        # View HTML report
 ```
 
-## Test Reports
-
-Playwright generates an HTML report after each execution with:
-- ✅ Passed/failed test results
-- 📸 Screenshots on failure
-- 🎬 Traces and videos (when enabled)
-- ⏱️ Execution timing
-
-**View locally:**
+### 3️⃣ View Reports
 ```bash
 npx playwright show-report
 ```
 
-## Continuous Integration
+---
 
-Tests run automatically on every push to `main` via GitHub Actions.
+## 📊 Test Reports
 
-**To view CI reports:**
-1. Go to **Actions** tab in GitHub
-2. Open a workflow run
-3. Download the `playwright-report` artifact
-4. Open `index.html` locally
+✅ **Passed/Failed Results** | 📸 **Screenshots** | 🎬 **Videos & Traces** | ⏱️ **Timing Analytics**
 
-## Testing Philosophy
-
-✓ Reliable locators (roles, text, test IDs)  
-✓ Avoid flaky tests  
-✓ Test user behavior, not implementation  
-✓ Clean, maintainable structure  
-✓ CI-optimized execution  
-
-## Roadmap
-
-- [ ] Pull Request checks
-- [ ] Multi-browser execution
-- [ ] Test tagging & filtering
-- [ ] Parallel jobs/sharding
-- [ ] GitHub Pages report publishing
+### 🌍 Live Public Report
+```
+https://lucasvacis87.github.io/playwright-repo/
+```
+*Auto-published from CI on every successful run*
 
 ---
 
-Built as a professional Playwright practice and portfolio project.
+## 🏗️ Testing Philosophy
+
+- ✓ Reliable locators (roles, text, test IDs)
+- ✓ Flake-free automation
+- ✓ Test behavior, not implementation
+- ✓ Readable, maintainable code
+- ✓ CI-first with parallel execution
+
+---
+
+## 📋 Roadmap
+
+- [ ] Multi-browser execution
+- [ ] Advanced sharding
+- [ ] Latest reports
+
+---
+
+**Built for professionals. Made for portfolios.** ✨
