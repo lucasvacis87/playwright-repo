@@ -1,0 +1,17 @@
+{
+  "baseUrl": "https://automationexercise.com",
+  "auth": {
+    "admin": {
+      "email": "owner@test.com",
+      "password": "Password123!"
+    },
+    "viewer": {
+      "email": "viewer@test.com",
+      "password": "Password123!"
+    }
+  },
+  "timeouts": {
+    "action": 5000,
+    "navigation": 15000
+  }
+}
