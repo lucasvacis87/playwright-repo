@@ -1,8 +1,69 @@
-
-# Playwright
+# =========================
+# Node / JS
+# =========================
 node_modules/
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
-/playwright/.auth/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.eslintcache
+
+# =========================
+# Playwright
+# =========================
+# Test results & reports
+playwright-report/
+test-results/
+blob-report/
+
+# Traces & videos
+trace.zip
+traces/
+videos/
+screenshots/
+
+# Downloaded files during tests
+downloads/
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# TypeScript
+# =========================
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# =========================
+# Coverage
+# =========================
+coverage/
+
+# =========================
+# IDEs / Editors
+# =========================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# CI / Temp
+# =========================
+.cache/
+.tmp/
